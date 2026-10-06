@@ -2,6 +2,7 @@
 
 A full-stack web application designed to simplify the process of pet adoption and pet care management. The system allows users to browse available pets, submit adoption requests, manage pet-related information, and access various pet-care services through a user-friendly interface.
 
+
 ---
 
 ## 📌 Project Overview
@@ -397,105 +398,110 @@ The frontend will normally run on:
 
 ```text
 http://localhost:5173
-🔌 API Example
-Pet APIs
-GET /pet/fetchall
+```
 
-Get all pets.
+---
 
-POST /pet/savepets
+## 🔌 API Examples
 
-Add a new pet.
+### Pet APIs
+* **GET** `/pet/fetchall` - Get all pets
+* **POST** `/pet/savepets` - Add a new pet
 
-Adoption API
-POST /api/adoption/request
+### Adoption API
+* **POST** `/api/adoption/request` - Submit an adoption request
 
-Submit an adoption request.
+### Cart API
+* **POST** `/cart/addtocart` - Add a pet to cart
 
-Cart API
-POST /cart/addtocart
+> *Note: API endpoints may vary depending on the current backend implementation.*
 
-Add a pet to the cart.
+---
 
-API endpoints may vary depending on the current backend implementation.
-
-🧪 Testing
+## 🧪 Testing
 
 The REST APIs can be tested using Postman.
 
-Example:
+**Example Login Request:**
 
-POST
-http://localhost:8080/api/auth/login
+`POST http://localhost:8080/api/auth/login`
 
-Request:
-
+```json
 {
   "email": "user@example.com",
   "password": "password"
 }
+```
 
-After successful login, use the returned JWT token for protected APIs.
+After successful login, use the returned JWT token for protected APIs:
 
+```http
 Authorization: Bearer <JWT_TOKEN>
-📸 Screenshots
+```
 
+---
+
+## 📸 Screenshots
+
+### Home Page
 ![Home Page](screenshots/home.png)
-<img width="867" height="685" alt="image" src="https://github.com/user-attachments/assets/8649eafb-9b0e-41eb-afbd-1772d96866cc" />
 
+### Pet Listing
+![Pet Listing](screenshots/pet-listing.png)
 
-![Pet Listing](screenshots/pets.png)
-<img width="856" height="686" alt="image" src="https://github.com/user-attachments/assets/b740703a-7cf4-455b-b080-f0b35b5256d1" />
+### Pet Details
+![Pet Details](screenshots/pet-detail.png)
 
+### Adoption Request
+![Adoption Request](screenshots/adoption-request.png)
 
-![Pet Details](screenshots/pet-details.png)
-<img width="842" height="630" alt="image" src="https://github.com/user-attachments/assets/cd95e427-fb3a-41eb-8cd8-1d9e08f21e54" />
-
-
-![Adoption Request](screenshots/adoption.png)
-<img width="886" height="643" alt="image" src="https://github.com/user-attachments/assets/61550a74-1cd1-4912-b081-128054ff25c4" />
-
-
+### Admin Dashboard
 ![Admin Dashboard](screenshots/admin-dashboard.png)
-<img width="887" height="684" alt="image" src="https://github.com/user-attachments/assets/44446876-497e-49ba-afa6-20a7d53d9912" />
 
-Recommended screenshots:
-Login/Register
-<img width="893" height="687" alt="image" src="https://github.com/user-attachments/assets/2ca56d34-350f-4606-8e16-748b4ae7e703" />
-<img width="898" height="674" alt="image" src="https://github.com/user-attachments/assets/43089aec-c920-441a-ae33-99229e11fdd2" />
+### Login
+![Login](screenshots/login.png)
 
-User Dashboard
-<img width="916" height="683" alt="image" src="https://github.com/user-attachments/assets/f717efae-6bed-45db-b728-4efe8facdcd6" />
+### Register
+![Register](screenshots/register.png)
 
-Medical Records
-<img width="887" height="665" alt="image" src="https://github.com/user-attachments/assets/1836ca6b-7284-4064-b768-ee975b243d03" />
+### User Dashboard
+![User Dashboard](screenshots/user-dashboard.png)
 
-🔮 Future Enhancements
-🤖 AI-based pet recommendation
-📍 Location-based pet search
-💳 Online payment integration
-📱 Mobile application
-🔔 Real-time notifications
-🩺 Advanced veterinary management
-📊 Advanced analytics dashboard
-🐕 AI-based pet matching
-☁️ Cloud deployment
-📷 Improved pet image management
-👨‍💻 Team
+### Medical Records
+![Medical Records](screenshots/medical-records.png)
 
-🎓 Project Type
+---
 
-Academic 
+## 🔮 Future Enhancements
 
-Domain: Pet Adoption & Pet Care Management
+* 🤖 AI-based pet recommendation
+* 📍 Location-based pet search
+* 💳 Online payment integration
+* 📱 Mobile application
+* 🔔 Real-time notifications
+* 🩺 Advanced veterinary management
+* 📊 Advanced analytics dashboard
+* 🐕 AI-based pet matching
+* ☁️ Cloud deployment
+* 📷 Improved pet image management
 
-Application Type: Full-Stack Web Application
+---
 
-📄 License
+## 🎓 Project Details
+
+* **Project Type:** Academic
+* **Domain:** Pet Adoption & Pet Care Management
+* **Application Type:** Full-Stack Web Application
+
+---
+
+## 📄 License
 
 This project is developed for educational and academic purposes.
 
-⭐ Support
+---
+
+## ⭐ Support
 
 If you find this project useful, consider giving the repository a ⭐ on GitHub.
 
