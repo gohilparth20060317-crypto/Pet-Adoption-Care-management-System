@@ -1,0 +1,31 @@
+# =========================
+# React Frontend
+# =========================
+pet-frontend/node_modules/
+pet-frontend/dist/
+
+# Environment variables
+pet-frontend/.env
+.env
+
+# =========================
+# Spring Boot Backend
+# =========================
+PetManagementSystem/target/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+.settings/
+
+# Eclipse
+.classpath
+.project
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
